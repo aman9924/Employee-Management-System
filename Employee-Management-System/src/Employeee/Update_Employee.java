@@ -170,7 +170,7 @@ class Update_Employee extends Add_Employee implements ActionListener{
         if(ae.getSource()==b && i==1){
             try{
                 conn con = new conn();
-                String str = "update employee set name='"+t1.getText()+"',fname='"+t2.getText()+"',age='"+age+"',dob='"+dat+"',addess='"+t3.getText()+"',phone='"+t4.getText()+"',email='"+t5.getText()+"',education='"+t6.getText()+"',post='"+t7.getText()+"',aadhar='"+t8.getText()+"',emp_id='"+t9.getText()+"' where emp_id='"+id_emp+"'";
+                String str = "update employee set name='"+t1.getText()+"',fname='"+t2.getText()+"',age='"+age+"',dob='"+dat+"',address='"+t3.getText()+"',phone='"+t4.getText()+"',email='"+t5.getText()+"',education='"+t6.getText()+"',post='"+t7.getText()+"',aadhar='"+t8.getText()+"',emp_id='"+t9.getText()+"' where emp_id='"+id_emp+"'";
                 con.s.executeUpdate(str);
                 JOptionPane.showMessageDialog(null,"successfully updated");
                 f.setVisible(false);
